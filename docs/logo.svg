@@ -1,0 +1,12 @@
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <title>Agent Shell logo</title>
+  <desc>Faceted hexagon with a subtle > prompt indicator in Aurora Teal</desc>
+  <!-- Faceted Jewel Shell - Geometric hexagon with facets and ">" prompt -->
+  <path d="M16 4 L26 9 L26 19 L16 24 L6 19 L6 9 Z" stroke="#111111" stroke-width="1.5" fill="none"/>
+  <!-- Inner facets -->
+  <path d="M16 8 L22 11 L22 17 L16 20 L10 17 L10 11 Z" stroke="#111111" stroke-width="1" fill="none"/>
+  <path d="M16 12 L19 13.5 L19 16.5 L16 18 L13 16.5 L13 13.5 Z" stroke="#111111" stroke-width="0.75" fill="none"/>
+  <!-- ">" prompt indicator in Aurora Teal -->
+  <path d="M12 16 L15 18 L12 20" stroke="#008080" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
