@@ -4,14 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agent Shell — Always-on Linux Shells for Developers</title>
-    <meta name="description" content="Personal, persistent, always-on Linux agents. Fixed-price EU hosting for developers.">
+    <meta name="description" content="Personal, persistent, always-on Linux shells in the EU. Fixed-price hosting for developers, AI agents, and automated workflows. Rootless Docker, systemD services, CI/CD runners included.">
     <meta name="robots" content="index, follow">
     
     <!-- Open Graph -->
     <meta property="og:title" content="Agent Shell — Always-on Linux Shells for Developers">
-    <meta property="og:description" content="Personal, persistent, always-on Linux agents. Fixed-price EU hosting for developers.">
+    <meta property="og:description" content="Personal, persistent, always-on Linux shells in the EU. Fixed-price hosting for developers, AI agents, and automated workflows. Rootless Docker, systemD services, CI/CD runners included.">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://agentshell.fi">
+    <meta property="og:url" content="https://agentshells.com">
+    <meta property="og:image" content="https://agentshells.com/assets/logos/agentshell-logo.png">
+    <meta property="og:site_name" content="Agent Shell">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Agent Shell — Always-on Linux Shells for Developers">
+    <meta name="twitter:description" content="Personal, persistent, always-on Linux shells in the EU. Fixed-price hosting for developers, AI agents, and automated workflows.">
+    <meta name="twitter:image" content="https://agentshells.com/assets/logos/agentshell-logo.png">
     
     <!-- Schema.org JSON-LD -->
     <script type="application/ld+json">
@@ -20,10 +28,12 @@
       "@type": "Organization",
       "name": "Agent Shell Enterprises Ltd",
       "url": "https://agentshell.enterprises",
+      "logo": "https://agentshells.com/assets/logos/agentshell-logo.png",
       "contactPoint": {
         "@type": "ContactPoint",
         "email": "sales@agentshells.com",
-        "contactType": "customer support"
+        "contactType": "customer support",
+        "areaServed": "EU"
       },
       "location": {
         "@type": "Place",
@@ -31,32 +41,82 @@
           "@type": "PostalAddress",
           "addressCountry": "FI"
         }
-      }
+      },
+      "sameAs": []
     }
     </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "Agent Shell",
+      "applicationCategory": "DeveloperApplication",
+      "operatingSystem": "Linux",
+      "description": "Always-on Linux shell hosting service for developers, AI agents, and automated workflows. Includes rootless Docker, systemD services, and CI/CD runners.",
+      "url": "https://agentshells.com",
+      "provider": {
+        "@type": "Organization",
+        "name": "Agent Shell Enterprises Ltd"
+      },
+      "offers": {
+        "@type": "Offer",
+        "priceCurrency": "EUR",
+        "price": "30",
+        "priceValidUntil": "2026-12-31"
+      },
+      "featureList": [
+        "Rootless Docker",
+        "systemD Services",
+        "Build & Compile Tools",
+        "CI/CD Runners",
+        "EU-Based Hosting",
+        "Always-On Servers",
+        "Remote IDEs"
+      ]
+    }
+    </script>
+    
+    <!-- Inter Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header class="header">
+    <!-- Skip Navigation -->
+    <a href="#main-content" class="skip-nav">Skip to main content</a>
+    
+    <header class="header" role="banner">
         <div class="container">
             <div class="logo-container">
-                <img src="../assets/logos/agentshell-logo.png" alt="Agent Shell logo" class="logo-icon" width="32" height="32">
-                <h1 class="logo-text">Agent Shells</h1>
+                <a href="/" class="logo-link" aria-label="Agent Shell Home">
+                    <img src="../assets/logos/agentshell-logo.png" alt="Agent Shell logo showing terminal icon" class="logo-icon" width="32" height="32">
+                    <span class="logo-text">Agent Shells</span>
+                </a>
             </div>
-            <nav class="nav">
-                <a href="#features" class="nav-link" data-section="features">Features</a>
-                <a href="#pricing" class="nav-link" data-section="pricing">Pricing</a>
-                <a href="#resources" class="nav-link" data-section="resources">Resources</a>
+            <nav class="nav" role="navigation" aria-label="Main navigation">
+                <button class="mobile-menu-toggle" aria-label="Toggle mobile menu" aria-expanded="false" aria-controls="main-nav">
+                    <span class="hamburger-icon"></span>
+                </button>
+                <div id="main-nav" class="nav-menu">
+                    <a href="#features" class="nav-link" data-section="features">Features</a>
+                    <a href="#pricing" class="nav-link" data-section="pricing">Pricing</a>
+                    <a href="#resources" class="nav-link" data-section="resources">Resources</a>
+                    <a href="mailto:sales@agentshells.com" class="nav-link cta-nav-link">Get Started</a>
+                </div>
             </nav>
         </div>
     </header>
 
-    <main>
+    <main id="main-content" role="main">
         <section class="hero">
             <div class="container">
-                <h2 class="hero-title">Agent Shell gives you a personal, always-on Linux shell in the EU — for your agents, cronjobs, and code.</h2>
+                <h1 class="hero-title">Agent Shell gives you a personal, always-on Linux shell in the EU — for your agents, cronjobs, and code.</h1>
                 <p class="hero-subtitle">Secure shell accounts on shared servers. No hardware. No runtime billing. Just stable, developer-grade infrastructure — always ready.</p>
+                <div class="hero-cta">
+                    <a href="mailto:sales@agentshells.com" class="cta-button hero-cta-button">Start Your Shell</a>
+                </div>
             </div>
         </section>
 
@@ -275,7 +335,7 @@
 
     </main>
 
-    <footer class="footer">
+    <footer class="footer" role="contentinfo">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
@@ -311,6 +371,39 @@
     <script>
         // SPA Navigation and Smooth Scrolling
         (function() {
+            // Mobile menu toggle
+            const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
+            const navMenu = document.querySelector('#main-nav');
+            
+            if (mobileMenuToggle && navMenu) {
+                mobileMenuToggle.addEventListener('click', function() {
+                    const isExpanded = this.getAttribute('aria-expanded') === 'true';
+                    this.setAttribute('aria-expanded', !isExpanded);
+                    navMenu.classList.toggle('nav-menu-open');
+                    document.body.classList.toggle('menu-open');
+                });
+                
+                // Close menu when clicking outside
+                document.addEventListener('click', function(e) {
+                    if (!navMenu.contains(e.target) && !mobileMenuToggle.contains(e.target)) {
+                        mobileMenuToggle.setAttribute('aria-expanded', 'false');
+                        navMenu.classList.remove('nav-menu-open');
+                        document.body.classList.remove('menu-open');
+                    }
+                });
+                
+                // Close menu on nav link click (mobile)
+                document.querySelectorAll('.nav-link').forEach(link => {
+                    link.addEventListener('click', function() {
+                        if (window.innerWidth < 768) {
+                            mobileMenuToggle.setAttribute('aria-expanded', 'false');
+                            navMenu.classList.remove('nav-menu-open');
+                            document.body.classList.remove('menu-open');
+                        }
+                    });
+                });
+            }
+            
             // Smooth scroll to sections
             function scrollToSection(sectionId) {
                 const section = document.getElementById(sectionId);
@@ -321,15 +414,21 @@
                         top: sectionTop,
                         behavior: 'smooth'
                     });
+                    // Update URL without triggering scroll
+                    if (history.pushState) {
+                        history.pushState(null, null, '#' + sectionId);
+                    }
                 }
             }
 
             // Handle navigation clicks
-            document.querySelectorAll('.nav-link').forEach(link => {
+            document.querySelectorAll('.nav-link[data-section]').forEach(link => {
                 link.addEventListener('click', function(e) {
-                    e.preventDefault();
-                    const section = this.getAttribute('data-section') || this.getAttribute('href').slice(1);
-                    scrollToSection(section);
+                    const section = this.getAttribute('data-section');
+                    if (section) {
+                        e.preventDefault();
+                        scrollToSection(section);
+                    }
                 });
             });
 
@@ -344,10 +443,9 @@
                     const sectionId = section.getAttribute('id');
                     
                     if (scrollPos >= sectionTop && scrollPos < sectionTop + sectionHeight) {
-                        document.querySelectorAll('.nav-link').forEach(link => {
+                        document.querySelectorAll('.nav-link[data-section]').forEach(link => {
                             link.classList.remove('active');
-                            if (link.getAttribute('data-section') === sectionId || 
-                                link.getAttribute('href') === `#${sectionId}`) {
+                            if (link.getAttribute('data-section') === sectionId) {
                                 link.classList.add('active');
                             }
                         });
