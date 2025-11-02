@@ -12,14 +12,14 @@
     <meta property="og:description" content="Personal, persistent, always-on Linux shells in the EU. Fixed-price hosting for developers, AI agents, and automated workflows. Rootless Docker, systemD services, CI/CD runners included.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://agentshells.com">
-    <meta property="og:image" content="https://agentshells.com/assets/logos/agentshell-logo.png">
+    <meta property="og:image" content="https://agentshells.com/assets/logos/AgentShell-logo-transparent.png">
     <meta property="og:site_name" content="Agent Shell">
     
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Agent Shell — Always-on Linux Shells for Developers">
     <meta name="twitter:description" content="Personal, persistent, always-on Linux shells in the EU. Fixed-price hosting for developers, AI agents, and automated workflows.">
-    <meta name="twitter:image" content="https://agentshells.com/assets/logos/agentshell-logo.png">
+    <meta name="twitter:image" content="https://agentshells.com/assets/logos/AgentShell-logo-transparent.png">
     
     <!-- Schema.org JSON-LD -->
     <script type="application/ld+json">
@@ -28,7 +28,7 @@
       "@type": "Organization",
       "name": "Agent Shell Enterprises Ltd",
       "url": "https://agentshell.enterprises",
-      "logo": "https://agentshells.com/assets/logos/agentshell-logo.png",
+      "logo": "https://agentshells.com/assets/logos/AgentShell-logo-transparent.png",
       "contactPoint": {
         "@type": "ContactPoint",
         "email": "sales@agentshells.com",
@@ -91,8 +91,8 @@
         <div class="container">
             <div class="logo-container">
                 <a href="/" class="logo-link" aria-label="Agent Shell Home">
-                    <img src="../assets/logos/agentshell-logo.png" alt="Agent Shell logo showing terminal icon" class="logo-icon" width="32" height="32">
-                    <span class="logo-text">Agent Shells</span>
+                    <img src="../assets/logos/AgentShell-logo-transparent.png" alt="Agent Shell logo" class="logo-icon logo-light">
+                    <img src="../assets/logos/AgentShell-logo-transparent-dark.png" alt="Agent Shell logo" class="logo-icon logo-dark">
                 </a>
             </div>
             <nav class="nav" role="navigation" aria-label="Main navigation">
@@ -113,9 +113,9 @@
         <section class="hero">
             <div class="container">
                 <h1 class="hero-title">Agent Shell gives you a personal, always-on Linux shell in the EU — for your agents, cronjobs, and code.</h1>
-                <p class="hero-subtitle">Secure shell accounts on shared servers. No hardware. No runtime billing. Just stable, developer-grade infrastructure — always ready.</p>
+                <p class="hero-subtitle">Secure shell accounts on shared servers. No hardware maintenance. No runtime billing. Just stable, developer-grade infrastructure — always ready.</p>
                 <div class="hero-cta">
-                    <a href="mailto:sales@agentshells.com" class="cta-button hero-cta-button">Start Your Shell</a>
+                    <a href="#pricing" class="cta-button hero-cta-button" data-section="pricing">Start Your Shell</a>
                 </div>
             </div>
         </section>
@@ -128,7 +128,7 @@
                         <span class="benefit-icon">💰</span>
                         <div class="benefit-content">
                             <h3 class="benefit-title">Predictable pricing</h3>
-                            <p class="benefit-description">€30 / €60 / €120 flat monthly, no per-minute nonsense.</p>
+                            <p class="benefit-description">Flat monthly pricing, no per-minute nonsense.</p>
                         </div>
                     </div>
                     <div class="benefit-item">
@@ -142,7 +142,7 @@
                         <span class="benefit-icon">💾</span>
                         <div class="benefit-content">
                             <h3 class="benefit-title">Real storage</h3>
-                            <p class="benefit-description">1 / 2 / 4 TB persistent disks, not volatile temp space.</p>
+                            <p class="benefit-description">From 1 TB up of persistent disk storage, not volatile temp space.</p>
                         </div>
                     </div>
                 </div>
@@ -189,6 +189,31 @@
                         <h3 class="feature-card-title">Remote IDEs</h3>
                         <p class="feature-card-description">Run remote development environments and IDEs directly on your shell account. Code, build, and deploy from anywhere.</p>
                     </div>
+                    <div class="feature-card">
+                        <div class="feature-icon-large">🌐</div>
+                        <h3 class="feature-card-title">Static Websites</h3>
+                        <p class="feature-card-description">Host and serve static websites directly from your shell. Deploy HTML, CSS, JavaScript, and static assets with full control.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon-large">🔀</div>
+                        <h3 class="feature-card-title">Private Git Service</h3>
+                        <p class="feature-card-description">Set up your own private Git service using Gitolite. Manage Git repositories and access control directly from your shell account.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon-large">📧</div>
+                        <h3 class="feature-card-title">Command-Line Email</h3>
+                        <p class="feature-card-description">Email service included with your shell account. Access your mail via command-line clients like mutt, mail, or other terminal-based email tools.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon-large">🤖</div>
+                        <h3 class="feature-card-title">Local On-Premise LLM</h3>
+                        <p class="feature-card-description">Access to local on-premise LLM infrastructure to run models like OpenAI OSS GPT 120b. <span class="coming-soon-badge">Coming Soon</span></p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon-large">💾</div>
+                        <h3 class="feature-card-title">Persistent Disk Space</h3>
+                        <p class="feature-card-description">1 TB and up of persistent disk storage for caches, Docker volumes, backups, artifacts, logs, and more. Your data persists across sessions.</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -197,10 +222,10 @@
             <div class="container">
                 <h2 class="section-title">Plans and Pricing</h2>
                 
-                <!-- Micro Plan First -->
-                <div class="basic-section">
-                    <div class="plans-grid basic-grid">
-                        <div class="plan-card basic-card">
+                <!-- All Plans in One Grid -->
+                <div class="dev-section">
+                    <div class="plans-grid dev-grid">
+                        <div class="plan-card dev-card">
                             <div class="plan-header">
                                 <h3 class="plan-name">Micro</h3>
                                 <div class="plan-price">
@@ -212,7 +237,7 @@
                             <div class="plan-features">
                                 <div class="feature-item">
                                     <span class="feature-icon">⚙️</span>
-                                    <span>4×vCPU</span>
+                                    <span>2×vCPU</span>
                                 </div>
                                 <div class="feature-item">
                                     <span class="feature-icon">🧠</span>
@@ -220,20 +245,15 @@
                                 </div>
                                 <div class="feature-item">
                                     <span class="feature-icon">💾</span>
-                                    <span>1 GB disk</span>
+                                    <span>10 GB disk</span>
                                 </div>
                                 <div class="feature-note">
                                     <p>Limited resources — not optimized for development. Good for bots, schedulers, and light tasks.</p>
                                 </div>
                             </div>
-                            <a href="#" class="cta-button basic-cta" aria-label="Buy Micro Plan">Buy Micro</a>
+                            <a href="#" class="cta-button dev-cta" aria-label="Buy Micro Plan">Buy Micro</a>
                         </div>
-                    </div>
-                </div>
 
-                <!-- Main Plans -->
-                <div class="dev-section">
-                    <div class="plans-grid dev-grid">
                         <div class="plan-card dev-card featured">
                             <div class="plan-badge">Popular</div>
                             <div class="plan-header">
@@ -421,8 +441,8 @@
                 }
             }
 
-            // Handle navigation clicks
-            document.querySelectorAll('.nav-link[data-section]').forEach(link => {
+            // Handle navigation clicks and CTA buttons
+            document.querySelectorAll('[data-section]').forEach(link => {
                 link.addEventListener('click', function(e) {
                     const section = this.getAttribute('data-section');
                     if (section) {

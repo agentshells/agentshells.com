@@ -146,14 +146,26 @@ body {
 .logo-icon {
     display: block;
     flex-shrink: 0;
+    height: 40px;
+    width: auto;
 }
 
-.logo-text {
-    font-size: 1.5rem;
-    font-weight: 600;
-    color: var(--text-primary);
-    letter-spacing: -0.01em;
-    margin: 0;
+.logo-dark {
+    display: none;
+}
+
+.logo-light {
+    display: block;
+}
+
+@media (prefers-color-scheme: dark) {
+    .logo-dark {
+        display: block;
+    }
+    
+    .logo-light {
+        display: none;
+    }
 }
 
 .nav {
@@ -385,10 +397,6 @@ body {
     background-color: var(--surface);
 }
 
-.basic-section {
-    margin-bottom: var(--spacing-2xl);
-}
-
 .dev-section {
     margin-bottom: var(--spacing-2xl);
 }
@@ -400,14 +408,10 @@ body {
     margin-top: var(--spacing-lg);
 }
 
-.basic-grid {
-    grid-template-columns: 1fr;
-    max-width: 400px;
-    margin: 0 auto;
-}
-
 .dev-grid {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 /* Plan Card */
@@ -551,17 +555,6 @@ body {
     outline-offset: 3px;
 }
 
-.basic-cta {
-    background: var(--surface);
-    color: var(--text-primary);
-    border: 1px solid var(--border);
-}
-
-.basic-cta:hover {
-    background-color: var(--background);
-    border-color: var(--color-aurora-teal);
-    color: var(--color-aurora-teal);
-}
 
 .dev-cta {
     background: var(--color-aurora-teal);
@@ -689,6 +682,19 @@ body {
     color: var(--text-secondary);
     line-height: 1.7;
     font-size: 0.9375rem;
+}
+
+.coming-soon-badge {
+    display: inline-block;
+    background: var(--color-aurora-teal);
+    color: var(--background);
+    padding: 2px 8px;
+    border-radius: 12px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-left: 0.5rem;
 }
 
 /* Benefits Section */
@@ -1036,13 +1042,9 @@ body {
         font-size: 2rem;
     }
 
-    .logo-text {
-        font-size: 1.25rem;
-    }
-
     .logo-icon {
-        width: 24px;
-        height: 24px;
+        height: 32px;
+        width: auto;
     }
 
     .hero-cta-button {
